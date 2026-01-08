@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/binary_search"
+import "golang_learning/utility/study_struct"
 
 func main() {
 	// utility.SayToni()
@@ -34,8 +34,13 @@ func main() {
 	// study_defer.StudyDefer()
 
 	// Binary Search algorithm
-	slice := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 19}
-	target := 12
-	binary_search.IterationBinarySearch(slice, target)
-	binary_search.RecursiveBinarySearch(slice, target, 0, len(slice)-1)
+	// slice := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 19}
+	// target := 12
+	// binary_search.IterationBinarySearch(slice, target)
+	// binary_search.RecursiveBinarySearch(slice, target, 0, len(slice)-1)
+
+	// STRUCT
+	study_struct.DeclareStruct()
+	study_struct.StudySlices()
+	study_struct.StudyMap()
 }
