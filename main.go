@@ -1,6 +1,8 @@
 package main
 
-import "golang_learning/utility/study_struct"
+import (
+	"golang_learning/utility/study_set"
+)
 
 func main() {
 	// utility.SayToni()
@@ -39,8 +41,11 @@ func main() {
 	// binary_search.IterationBinarySearch(slice, target)
 	// binary_search.RecursiveBinarySearch(slice, target, 0, len(slice)-1)
 
-	// STRUCT
-	study_struct.DeclareStruct()
-	study_struct.StudySlices()
-	study_struct.StudyMap()
+	// STRUCTS + SLICES + MAPS
+	// study_struct.DeclareStruct()
+	// study_struct.StudySlices()
+	// study_struct.StudyMap()
+
+	// SET
+	study_set.StudySet()
 }
