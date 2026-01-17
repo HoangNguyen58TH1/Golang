@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang_learning/utility/study_set"
+	"golang_learning/utility/slicing_slices"
 )
 
 func main() {
@@ -47,5 +47,11 @@ func main() {
 	// study_struct.StudyMap()
 
 	// SET
-	study_set.StudySet()
+	// study_set.StudySet()
+
+	// SLICING SLICES
+	slicing_slices.SlicingSlices()
+	slicing_slices.PointerSlice()
+	slicing_slices.CopyElement()
+	slicing_slices.RemoveElement()
 }
