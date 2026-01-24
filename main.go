@@ -54,8 +54,10 @@ func main() {
 	// slicing_slices.RemoveElement()
 
 	// CONCURRENCY - GOROUTINES
-	concurrency.StudyGoroutines()
-	concurrency.StudyGoroutinesChannel()
-	concurrency.StudyGoroutinesChannelBuffering()
-	concurrency.SendAndReceiveChannel()
+	// concurrency.StudyGoroutines()
+	// concurrency.StudyGoroutinesChannel()
+	// concurrency.StudyGoroutinesChannelBuffering()
+	// concurrency.SendAndReceiveChannel()
+	// concurrency.UseChannelToCommunicateBetweenGoroutines()
+	concurrency.UseChannelWithBuffer()
 }
