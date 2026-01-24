@@ -57,7 +57,9 @@ func StudyGoroutinesChannel() {
 	<-done
 }
 
+// buffered
 func StudyGoroutinesChannelBuffering() {
+	// ch := make(chan <type>, <number of buffered channels>)
 	done := make(chan string, 1)
 	fmt.Println("Application start")
 
@@ -74,9 +76,9 @@ func SendAndReceiveChannel() {
 	go receiveValue(channel)
 	time.Sleep(time.Second)
 }
-func sendValue(number string, channel chan<- string) {
+func sendValue(value string, channel chan<- string) {
 	for {
-		channel <- number
+		channel <- value
 	}
 }
 func receiveValue(channel <-chan string) {
