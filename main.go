@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang_learning/utility/slicing_slices"
-)
+import "golang_learning/utility/concurrency"
 
 func main() {
 	// utility.SayToni()
@@ -50,8 +48,14 @@ func main() {
 	// study_set.StudySet()
 
 	// SLICING SLICES
-	slicing_slices.SlicingSlices()
-	slicing_slices.PointerSlice()
-	slicing_slices.CopyElement()
-	slicing_slices.RemoveElement()
+	// slicing_slices.SlicingSlices()
+	// slicing_slices.PointerSlice()
+	// slicing_slices.CopyElement()
+	// slicing_slices.RemoveElement()
+
+	// CONCURRENCY - GOROUTINES
+	concurrency.StudyGoroutines()
+	concurrency.StudyGoroutinesChannel()
+	concurrency.StudyGoroutinesChannelBuffering()
+	concurrency.SendAndReceiveChannel()
 }
