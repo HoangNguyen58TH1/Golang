@@ -58,6 +58,11 @@ func main() {
 	// concurrency.StudyGoroutinesChannel()
 	// concurrency.StudyGoroutinesChannelBuffering()
 	// concurrency.SendAndReceiveChannel()
+
+	// CONCURRENCY - CHANNELS
 	// concurrency.UseChannelToCommunicateBetweenGoroutines()
-	concurrency.UseChannelWithBuffer()
+	// concurrency.UseChannelWithBuffer()
+
+	// CONCURRENCY - SELECT
+	concurrency.StudySelect()
 }
