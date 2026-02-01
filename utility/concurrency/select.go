@@ -17,13 +17,11 @@ func findSC(name, server string, c chan int) {
 	fmt.Println("random_time:", random_time, "seconds, of:", server)
 	time.Sleep(time.Duration(random_time) * time.Second) // sleep a time from 0 --> 9 seconds
 
-	// return security clearance from map
-	c <- scMapping[name]
+	c <- scMapping[name] // return security clearance from map
 }
 
 func StudySelect() {
-	// make sure random ko return trùng value
-	// trong GO version mới (1.20) thì ko cần nữa, nhưng nó clear ý đồ mình muốn làm
+	// make sure random ko return trùng value. Ttrong GO version mới (1.20) don't need, nhưng nó clear ý đồ mình muốn làm
 	// rand.Seed(time.Now().UnixNano())
 
 	ch1 := make(chan int)
@@ -40,8 +38,6 @@ func StudySelect() {
 		fmt.Println(name, "Has a security clearance of:", sc, "found in server 2")
 	case <-time.After(4 * time.Second):
 		fmt.Println("Search time out...!")
-	default:
-		fmt.Println("No channel ready")
 	}
 }
 
