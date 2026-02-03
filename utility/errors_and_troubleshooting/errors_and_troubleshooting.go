@@ -3,6 +3,8 @@ package errors_and_troubleshooting
 import (
 	"errors"
 	"fmt"
+	"os"
+	"strings"
 )
 
 var scMapping = map[string]int{
@@ -57,4 +59,49 @@ func MainFunction() {
 	} else {
 		fmt.Println("Clearance level found:", clearance, ". Error code:", err)
 	}
+}
+
+func StandardInput() {
+	var a int
+	var b string
+	fmt.Fscan(os.Stdin, &a, &b) // enter a and b
+	fmt.Println(a, b)
+}
+
+func ReadFile() {
+	file, err := os.Open("utility/errors_and_troubleshooting/text.txt")
+	fmt.Println("file:", file)
+
+	if err != nil {
+		fmt.Println("err:", err)
+		panic(err)
+	}
+	defer file.Close()
+
+	var x int
+	var y float64
+	// read from file and get the first 2 tokens with type: int & float64
+	// Fscan store tokens (separate white space, new line, a tab)
+	// if can NOT parse token --> panic: expected integer
+	_, err = fmt.Fscan(file, &x, &y)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("x:", x, ", y:", y)
+}
+
+func CheckContains() {
+	fmt.Println(strings.Contains("hoang", "hoa"))  // t
+	fmt.Println(strings.Contains("hoang", "toni")) // f
+	fmt.Println(strings.Contains("hoang", ""))     // t
+	fmt.Println(strings.Contains("", ""))          // t
+
+	// compare 2 strings in case-insensitive
+	fmt.Println(strings.EqualFold("Go", "go"))  // t
+	fmt.Println(strings.EqualFold("Goa", "go")) // f
+
+	// Ruby: array.join(sep) --> split(' ') separate theo ' '
+	// GO: strings.Join(array, sep)
+	s := []string{"hoang", "toni", "van"}
+	fmt.Println(strings.Join(s, ", ")) // hoang, toni, van
 }

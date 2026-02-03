@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang_learning/utility/errors_and_troubleshooting"
-)
+import "golang_learning/utility/errors_and_troubleshooting"
 
 func main() {
 	// utility.SayToni()
@@ -69,5 +67,8 @@ func main() {
 	// concurrency.StudySelect()
 
 	// Error and Troubleshooting
-	errors_and_troubleshooting.MainFunction()
+	// errors_and_troubleshooting.MainFunction()
+	errors_and_troubleshooting.StandardInput()
+	errors_and_troubleshooting.ReadFile()
+	errors_and_troubleshooting.CheckContains()
 }
