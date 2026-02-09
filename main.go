@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/web_server"
+import "golang_learning/utility/factory"
 
 func main() {
 	// utility.SayToni()
@@ -73,5 +73,8 @@ func main() {
 	// errors_and_troubleshooting.CheckContains()
 
 	// WebServer
-	web_server.Hanlde()
+	// web_server.Hanlde()
+
+	// Factory Design Pattern
+	factory.FactoryPattern()
 }
