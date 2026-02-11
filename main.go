@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/factory"
+import "golang_learning/utility/singleton"
 
 func main() {
 	// utility.SayToni()
@@ -76,5 +76,8 @@ func main() {
 	// web_server.Hanlde()
 
 	// Factory Design Pattern
-	factory.FactoryPattern()
+	// factory.FactoryPattern()
+
+	// Singleton
+	singleton.SinglePattern()
 }
