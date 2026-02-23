@@ -1,6 +1,8 @@
 package main
 
-import "golang_learning/utility/singleton"
+import (
+	"golang_learning/utility/builder"
+)
 
 func main() {
 	// utility.SayToni()
@@ -79,5 +81,8 @@ func main() {
 	// factory.FactoryPattern()
 
 	// Singleton
-	singleton.SinglePattern()
+	// singleton.SinglePattern()
+
+	// Builder pattern
+	builder.BuilderPattern()
 }
