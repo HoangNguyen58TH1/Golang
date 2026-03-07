@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang_learning/utility/builder"
-)
+import "golang_learning/utility/locks_and_syncs"
 
 func main() {
 	// utility.SayToni()
@@ -84,5 +82,11 @@ func main() {
 	// singleton.SinglePattern()
 
 	// Builder pattern
-	builder.BuilderPattern()
+	// builder.BuilderPattern()
+
+	// Locks and Syncs
+	locks_and_syncs.UnLock()
+	locks_and_syncs.LockWithMutex()
+	locks_and_syncs.LockWithRWMutex()
+	locks_and_syncs.SyncOnce()
 }
