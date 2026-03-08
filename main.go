@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/timers_and_tickers"
+import "golang_learning/utility/channel_generators"
 
 func main() {
 	// utility.SayToni()
@@ -91,6 +91,9 @@ func main() {
 	// locks_and_syncs.SyncOnce()
 
 	// Timers and Tickers
-	timers_and_tickers.Timers()
-	timers_and_tickers.Tickers()
+	// timers_and_tickers.Timers()
+	// timers_and_tickers.Tickers()
+
+	// Channel Generators
+	channel_generators.Consumer()
 }
