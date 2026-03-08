@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/locks_and_syncs"
+import "golang_learning/utility/timers_and_tickers"
 
 func main() {
 	// utility.SayToni()
@@ -85,8 +85,12 @@ func main() {
 	// builder.BuilderPattern()
 
 	// Locks and Syncs
-	locks_and_syncs.UnLock()
-	locks_and_syncs.LockWithMutex()
-	locks_and_syncs.LockWithRWMutex()
-	locks_and_syncs.SyncOnce()
+	// locks_and_syncs.UnLock()
+	// locks_and_syncs.LockWithMutex()
+	// locks_and_syncs.LockWithRWMutex()
+	// locks_and_syncs.SyncOnce()
+
+	// Timers and Tickers
+	timers_and_tickers.Timers()
+	timers_and_tickers.Tickers()
 }
