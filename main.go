@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/channel_generators"
+import "golang_learning/utility/pipeline"
 
 func main() {
 	// utility.SayToni()
@@ -95,5 +95,9 @@ func main() {
 	// timers_and_tickers.Tickers()
 
 	// Channel Generators
-	channel_generators.Consumer()
+	// channel_generators.Consumer()
+
+	// Pipeline Pattern
+	pipeline.PipelinePattern()
+	pipeline.OrderPipeLine()
 }
