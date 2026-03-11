@@ -107,4 +107,5 @@ func main() {
 	laws_of_reflection.ValueToReflect()
 	laws_of_reflection.ReflectToValue()
 	laws_of_reflection.SetReflectValue()
+	laws_of_reflection.ReflectWithStruct()
 }
