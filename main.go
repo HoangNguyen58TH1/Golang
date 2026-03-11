@@ -1,6 +1,8 @@
 package main
 
-import "golang_learning/utility/pipeline"
+import (
+	"golang_learning/utility/laws_of_reflection"
+)
 
 func main() {
 	// utility.SayToni()
@@ -98,6 +100,11 @@ func main() {
 	// channel_generators.Consumer()
 
 	// Pipeline Pattern
-	pipeline.PipelinePattern()
-	pipeline.OrderPipeLine()
+	// pipeline.PipelinePattern()
+	// pipeline.OrderPipeLine()
+
+	// Laws of Reflection
+	laws_of_reflection.ValueToReflect()
+	laws_of_reflection.ReflectToValue()
+	laws_of_reflection.SetReflectValue()
 }
