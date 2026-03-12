@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang_learning/utility/laws_of_reflection"
+	"golang_learning/utility/config_file_reader"
 )
 
 func main() {
@@ -104,8 +104,12 @@ func main() {
 	// pipeline.OrderPipeLine()
 
 	// Laws of Reflection
-	laws_of_reflection.ValueToReflect()
-	laws_of_reflection.ReflectToValue()
-	laws_of_reflection.SetReflectValue()
-	laws_of_reflection.ReflectWithStruct()
+	// laws_of_reflection.ValueToReflect()
+	// laws_of_reflection.ReflectToValue()
+	// laws_of_reflection.SetReflectValue()
+	// laws_of_reflection.ReflectWithStruct()
+
+	// Custom Configuration File Reader
+	config_file_reader.Perform()
+	config_file_reader.PerformAdvanced()
 }
