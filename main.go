@@ -1,9 +1,5 @@
 package main
 
-import (
-	"golang_learning/utility/config_file_reader"
-)
-
 func main() {
 	// utility.SayToni()
 	// fmt.Println(utility.AddSubtractMultiple(2, 3))
@@ -110,6 +106,6 @@ func main() {
 	// laws_of_reflection.ReflectWithStruct()
 
 	// Custom Configuration File Reader
-	config_file_reader.Perform()
-	config_file_reader.PerformAdvanced()
+	// config_file_reader.Perform()
+	// config_file_reader.PerformAdvanced()
 }
