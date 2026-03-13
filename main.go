@@ -1,5 +1,7 @@
 package main
 
+import "golang_learning/utility/file_handling"
+
 func main() {
 	// utility.SayToni()
 	// fmt.Println(utility.AddSubtractMultiple(2, 3))
@@ -108,4 +110,10 @@ func main() {
 	// Custom Configuration File Reader
 	// config_file_reader.Perform()
 	// config_file_reader.PerformAdvanced()
+
+	// File Handling
+	file_handling.FileHandling()
+	file_handling.HandleJsonFile()
+	file_handling.HandleXMLFile()
+	file_handling.HandleCSVFile()
 }
