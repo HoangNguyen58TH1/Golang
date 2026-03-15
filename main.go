@@ -1,6 +1,6 @@
 package main
 
-import "golang_learning/utility/file_handling"
+import "golang_learning/utility/my_sql"
 
 func main() {
 	// utility.SayToni()
@@ -112,8 +112,11 @@ func main() {
 	// config_file_reader.PerformAdvanced()
 
 	// File Handling
-	file_handling.FileHandling()
-	file_handling.HandleJsonFile()
-	file_handling.HandleXMLFile()
-	file_handling.HandleCSVFile()
+	// file_handling.FileHandling()
+	// file_handling.HandleJsonFile()
+	// file_handling.HandleXMLFile()
+	// file_handling.HandleCSVFile()
+
+	// MySQL
+	my_sql.ConnectMySQL()
 }
